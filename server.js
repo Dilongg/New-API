@@ -47,8 +47,8 @@ app.get('/token', async (req, res) => {
       iss: 
         serviceAccount.client_email,
       
-      scope: 
-        'https://www.googleapis.com/auth/spreadsheets', 
+      scope:
+  'https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/spreadsheets',
       
       aud: 
         'https://oauth2.googleapis.com/token', 
